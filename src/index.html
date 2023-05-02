@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Safary</title>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">Explore</h2>
+            <div class="toggle ">
+
+            </div>
+            
+        </header>
+      <video src="../public/videos/backgroundv1.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Enjoying The Life</h3>
+            <p>“Learning never exhausts the mind.” “For the things we have to learn before we can do them, we learn by doing them.”
+                 “Learning is not attained by chance, it must be sought for with ardor and attended to with diligence.” 
+                 “The beautiful thing about learning is that nobody can take it away from you.”</p>
+            <a href="#">read more</a>
+        </div>
+        <ul class="social">
+            <li><a href="www.facebook.com"><img src="../public/icon/fb.png" class="socialimg"></a></li>
+            <li><a href="www.facebook.com"><img src="../public/icon/ig.png" class="socialimg"></a></li>
+            <li><a href="www.facebook.com"><img src="../public/icon/tt.png" class="socialimg"></a></li>
+            <li><a href="www.facebook.com"><img src="../public/icon/yt.png" class="socialimg"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Vlogs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle=document.querySelector('.toggle')
+        const showcase=document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',()=>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
